@@ -7,7 +7,7 @@ If you can, try writing it in only one line of code.*/
 const findMultiple = (function(integer,limit){
     let stop = limit / integer;
     let arr=[]
-    for(i=0;i<=stop;i++){
+    for(let i=1;i<=stop;i++){
         console.log(arr[i]=i*integer)
         arr.push(arr[i])
     }
