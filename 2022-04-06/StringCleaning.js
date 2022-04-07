@@ -4,5 +4,5 @@ stringClean('! !') == '! !'
 stringClean('123456789') == ''
 stringClean('This looks5 grea8t!') == 'This looks great!'
 Your harried co-workers are looking to you for a solution to take this garbled text and remove all of the numbers. Your program will take in a string and clean out all numeric characters, and return a string with spacing and special characters ~#$%^&!@*():;"'.,? all intact.*/
-const stringClean=str=>str.replace(/[0-9]/g,'')
-console.log(stringClean('abc123'))
+const stringClean=str=>str.replace(/[0-9]/g,'')//oneliner
+console.log(stringClean('abc123'))//test
