@@ -16,8 +16,16 @@ Examples
 '0' and '?' returns -1
 */
 const sameCase = (a, b) => {
-    return (!isNaN(a) || !isNaN(b))?-1:
-    (a===a.toLowerCase() && b===b.toLowerCase() ||
-    (a===a.toUpperCase() && b===b.toUpperCase()))? 1: 0;
+    if(!isNaN(a) || !isNaN(b) || /[~!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(b) || /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(a)){
+        return -1
+    }else if(a.indexOf(' ') >= 0 || b.indexOf(' ') >= 0){
+        return -1
+    }else if((a===a.toLowerCase() && b===b.toLowerCase()) ||(a===a.toUpperCase() && b===b.toUpperCase())){
+        return 1
+    }else if(a.toLowerCase() != a.toUpperCase() || b.toLowerCase() != b.toUpperCase()){
+        return 0
+    }else{
+        return -1
+    }
 }
-console.log(sameCase('A','B'))
+console.log(sameCase(' ','b'))
