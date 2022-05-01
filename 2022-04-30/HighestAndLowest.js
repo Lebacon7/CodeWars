@@ -16,4 +16,4 @@ function highAndLow(numbers){
     numMax = Math.max(...numArr)
     return `${numMax} ${numMin}`
   }
-console.log(highAndLow("1 2 -3 4 5"))
+console.log(highAndLow("1 2 -3 4 5")
