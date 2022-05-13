@@ -6,3 +6,4 @@ class Kata{
         return l*w*h
     }
 }
+console.log(Kata.getVolumeOfCuboid(6.3,2,5))
