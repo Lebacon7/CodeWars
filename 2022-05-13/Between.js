@@ -10,8 +10,11 @@ b = 4
 const between = (a,b) => {
     let arr = []
     for(i=a; i<=b; i++){
-        arr.push()
+        arr.push(i)
     }
-    console.log(arr)
+    return arr
 }
 console.log(between(5,11))
+//Most creative solution I found:
+const inBetween = (a,b) => [...Array(b-a+1)].map((_,i) => i + a);
+console.log(inBetween(5,11))
