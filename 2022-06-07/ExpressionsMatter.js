@@ -20,3 +20,4 @@ function expressionMatter(a, b, c) {
       a * b + c,
     );
   }
+console.log(expressionMatter(1,3,7))
