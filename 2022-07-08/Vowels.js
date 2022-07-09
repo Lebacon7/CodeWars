@@ -20,3 +20,4 @@ function vowelIndices(word){
     })
     return arr2
   }
+  console.log(vowelIndices('YoMama'))

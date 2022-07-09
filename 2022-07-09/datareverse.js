@@ -25,5 +25,5 @@ function dataReverse(data) {
   return arrayOfArrays.length>0?
     arrayOfArrays.reverse().join(',').split(',').map(Number):
     arrayOfArrays=[];
-  }
+  } 
   console.log(dataReverse([[0,0,1,0,1,0,0,1,0,0,1,1,0,1,1,0]]))
