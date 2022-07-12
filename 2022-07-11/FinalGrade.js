@@ -7,7 +7,7 @@ This function should return a number (final grade). There are four types of fina
 0, in other cases
 */
 function finalGrade (exam, projects) {
-    return exam>90&& projects>10? 100:
+    return exam>90|| projects>10? 100:
     exam>75&& projects>=5? 90:
     exam>50&& projects>=2? 75:
     0;
