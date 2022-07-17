@@ -9,4 +9,4 @@ You can assume that all values are integers. Do not mutate the input array/list.
 function invert(array) {
     return array.map(x=>x*-1)
  }
- console.log(invert([-1,2,3,-4]))
+ console.log(invert([-1,2,3,-4))
